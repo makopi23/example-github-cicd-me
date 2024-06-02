@@ -4,5 +4,8 @@ jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ github.actor }}"
-      - run: echo "${{ github.run_id }}"
+      - run: echo "ワークフロー実行者： ${{ github.actor }}"
+      - run: echo "ワークフローの実行ID： ${{ github.run_id }}"
+      - run: echo "リポジトリ名： ${{ github.repository }}"
+      - run: echo "リポジトリのオーナー名： ${{ github.repository_owner }}"
+      - run: echo "トリガーとなったイベント： ${{ github.event }}"
