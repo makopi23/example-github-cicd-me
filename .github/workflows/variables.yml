@@ -7,4 +7,4 @@ jobs:
       USERNAME: ${{ var.USERNAME }}
     steps:
       - run: echo "${USERNAME}"
-      - run: echo "${{var.USERNAME}}"
+      #- run: echo "${{ var.USERNAME }}"
